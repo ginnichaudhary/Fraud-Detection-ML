@@ -1,37 +1,65 @@
 # Fraud Detection using Machine Learning
 
-## Project Overview
-This project implements an end-to-end fraud detection system using machine learning
-on large-scale financial transaction data.
+## 📌 Project Overview
+This project implements an end-to-end fraud detection system using machine learning techniques
+on large-scale financial transaction data. The objective is to accurately identify fraudulent
+transactions while minimizing false negatives, which is critical for real-world financial systems.
 
-## Dataset
-- 6.3M+ financial transactions
-- Highly imbalanced fraud data
-- Target variable: isFraud  
-⚠️ Dataset not uploaded due to large size.
+---
 
-## Technologies Used
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- SMOTE (imbalanced-learn)
-- XGBoost
-- Matplotlib, Seaborn
+## 📊 Dataset
+- Over **6.3 million financial transactions**
+- Highly **imbalanced dataset**
+- Target variable: `isFraud`
 
-## Methodology
-1. Data preprocessing & feature engineering
-2. Handling class imbalance using SMOTE
-3. Logistic Regression as baseline model
-4. XGBoost as final model
-5. Evaluation using ROC-AUC, Confusion Matrix & Recall
-6. Threshold tuning for business use-case
-7. Feature importance analysis
+⚠️ **Note:**  
+The original dataset is not included in this repository due to size limitations.
+It can be shared separately upon request.
 
-## Results
-- XGBoost ROC-AUC ≈ 0.999
-- High fraud recall ensuring minimal fraud leakage
+---
 
-## How to Run
-```bash
-pip install -r requirements.txt
-# Author -GINNI CHAUDHARY
+## 🛠️ Technologies & Tools
+- **Python**
+- **Pandas, NumPy**
+- **Scikit-learn**
+- **SMOTE (imbalanced-learn)**
+- **XGBoost**
+- **Matplotlib, Seaborn**
+- **Jupyter Notebook**
+
+---
+
+## 🧠 Methodology
+1. Data cleaning and preprocessing
+2. Feature engineering (transaction amount, balance differences, transaction types)
+3. Handling class imbalance using **SMOTE**
+4. Baseline model: **Logistic Regression**
+5. Advanced model: **XGBoost Classifier**
+6. Model evaluation using:
+   - ROC-AUC
+   - Confusion Matrix
+   - Precision, Recall, F1-score
+7. Threshold tuning based on business use-case
+8. Feature importance analysis
+
+---
+
+## 🚀 Results
+- **Logistic Regression ROC-AUC:** ~0.98
+- **XGBoost ROC-AUC:** ~0.999
+- Achieved **high fraud recall**, reducing the risk of missing fraudulent transactions
+
+---
+
+## 📈 Key Insights
+- Fraudulent transactions are more frequent in **TRANSFER** and **CASH_OUT** types
+- Sudden balance changes and high transaction amounts are strong fraud indicators
+- Class imbalance handling significantly improves fraud detection performance
+
+---
+
+## ▶️ How to Run the Project
+1. Install required libraries:
+   ```bash
+   pip install -r requirements.txt
+
