@@ -34,3 +34,4 @@ on large-scale financial transaction data.
 ## How to Run
 ```bash
 pip install -r requirements.txt
+# Author -GINNI CHAUDHARY
